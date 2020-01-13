@@ -512,7 +512,7 @@
  <bean id="commercialBanner01" class="acme.entities.banners.CommercialBanner">
  	<property name="picture" value="Coca-Cola Picture"/>
  	<property name="slogan" value="Let's do it together"/>
- 	<property name="url" value="https://www.cocacola.es/es/home/"/>
+ 	<property name="url" value="https://i.imgur.com/IbdOVAA.png?1"/>
  	<property name="creditCardNumber" value="4485715860868875"/>
  	<property name="holder" value="Marco Antonio Fernández González"/>
  	<property name="brand" value="Visa"/>
@@ -537,10 +537,42 @@
 
  <!-- Non commercial banners -->
   <bean id="nonCommercialBanner01" class="acme.entities.banners.NonCommercialBanner">
- 	<property name="picture" value="Global Warning Picture"/>
- 	<property name="slogan" value="We change our behavior or change our planet"/>
- 	<property name="url" value="https://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global"/>
- 	<property name="jingle" value="https://www.youtube.com/watch?v=kJQP7kiw5Fk"/>
+ 	<property name="picture" value="WWF Picture"/>
+ 	<property name="slogan" value="Our planet needs superheroes like you"/>
+ 	<property name="url" value="https://i.imgur.com/8YcXhS0.png"/>
+ 	<property name="jingle" value="https://www.youtube.com/watch?v=OjGe-_OYWQQ"/>
+    <property name="sponsor" ref="sponsor1sponsor"/>
+ </bean>
+ 
+ <bean id="nonCommercialBanner02" class="acme.entities.banners.NonCommercialBanner">
+ 	<property name="picture" value="Change.org Picture"/>
+ 	<property name="slogan" value="The world's biggest petition's platform"/>
+ 	<property name="url" value="https://i.imgur.com/NGLSjk6.png"/>
+ 	<property name="jingle" value="https://www.youtube.com/watch?v=JvLLk4f-2_U"/>
+    <property name="sponsor" ref="sponsor1sponsor"/>
+ </bean>
+ 
+ <bean id="nonCommercialBanner03" class="acme.entities.banners.NonCommercialBanner">
+ 	<property name="picture" value="AFOPRODEI Picture"/>
+ 	<property name="slogan" value="Asociación para el Fomento y Promoción del Deporte Inclusivo"/>
+ 	<property name="url" value="https://i.imgur.com/2eVF1HG.png"/>
+ 	<property name="jingle" value="https://www.youtube.com/watch?v=g7Q_LnQFirU"/>
+    <property name="sponsor" ref="sponsor1sponsor"/>
+ </bean>
+ 
+ <bean id="nonCommercialBanner04" class="acme.entities.banners.NonCommercialBanner">
+ 	<property name="picture" value="Fundación El Gancho Picture"/>
+ 	<property name="slogan" value="Promotores de La Azotea Azul"/>
+ 	<property name="url" value="https://i.imgur.com/fihihcF.png"/>
+ 	<property name="jingle" value="https://www.youtube.com/watch?v=JDdPUXidipg"/>
+    <property name="sponsor" ref="sponsor1sponsor"/>
+ </bean>
+ 
+ <bean id="nonCommercialBanner05" class="acme.entities.banners.NonCommercialBanner">
+ 	<property name="picture" value="Medecins Sans Frontieres Picture"/>
+ 	<property name="slogan" value="Help us to save lifes!"/>
+ 	<property name="url" value="https://i.imgur.com/MtBRoNP.png"/>
+ 	<property name="jingle" value="https://www.youtube.com/watch?v=l9GzigCPHmM"/>
     <property name="sponsor" ref="sponsor1sponsor"/>
  </bean>
  
