@@ -24,10 +24,8 @@
 	<acme:form-textarea code="authenticated.job.form.label.description" path="description"/>
 	<acme:form/>
 	
-	<a href=/acme-jobs/authenticated/duty/list?id=${id}><acme:message code="authenticated.job.form.label.duty"/><a/>
-	<p></p>
-	<a href=/acme-jobs/authenticated/audit-record/list?id=${id}><acme:message code="authenticated.job.form.label.auditRecord"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="authenticated.job.form.label.duty" action="/authenticated/duty/list?id=${id}"/>
+	<acme:form-submit method="get" code="authenticated.job.form.label.auditRecord" action="/authenticated/audit-record/list?id=${id}"/>
 	
 	<acme:form-return code="authenticated.job.form.button.return"/>
 	

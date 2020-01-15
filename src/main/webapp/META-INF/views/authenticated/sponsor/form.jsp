@@ -26,13 +26,11 @@
 	<acme:form-textarea code="authenticated.sponsor.form.label.cvv" path="cvv" readonly="true"/>
 	</jstl:if>
 	<jstl:if test="${(creditCardNumber == '' || creditCardNumber == null) && command != 'create'}">
-	<a href=/acme-jobs/sponsor/credit-card/create><acme:message code="sponsor.form.label.creditCard.create"/></a>
+	<acme:form-submit method="get" code="sponsor.form.label.creditCard.create" action="/sponsor/credit-card/create"/>
 	</jstl:if>
 	<jstl:if test="${creditCardNumber != null && creditCardNumber != ''}">
-	<a href=/acme-jobs/sponsor/credit-card/update><acme:message code="sponsor.form.label.creditCard.update"/></a>
+	<acme:form-submit method="get" code="sponsor.form.label.creditCard.update" action="/sponsor/credit-card/update"/>
 	</jstl:if>
-	
-	<p></p>
 	
 	<acme:form-submit test="${command == 'create'}" code="authenticated.sponsor.form.button.create" action="/authenticated/sponsor/create"/>
 	<acme:form-submit test="${command == 'update'}" code="authenticated.sponsor.form.button.update" action="/authenticated/sponsor/update"/>

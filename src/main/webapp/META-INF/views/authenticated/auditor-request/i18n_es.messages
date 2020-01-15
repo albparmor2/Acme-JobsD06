@@ -13,6 +13,8 @@ authenticated.auditor.auditor.form.title.create = Solicitud para hacerse auditor
 authenticated.auditor-request.form.label.firm = Agencia: 
 authenticated.auditor-request.form.label.responsibilityStatement = Declaración de responsabilidades:
 
+authenticated.auditor-request.existAuditorRequest = Ya tienes pendiente una solicitud para ser auditor, por favor espere a su aceptación.
+
 authenticated.auditor-request.form.button.create = Registrar
 authenticated.auditor-request.form.button.update = Actualizar
 authenticated.auditor-request.form.button.return = Volver

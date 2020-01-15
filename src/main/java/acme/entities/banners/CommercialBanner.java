@@ -44,7 +44,7 @@ public class CommercialBanner extends Banner {
 	private Integer				year;
 
 	@NotBlank
-	@Pattern(regexp = "^\\d{3,4}$", message = "acme.cvv.error.pattern")
+	@Pattern(regexp = "^\\d{3,4}$", message = "The cvv must be 3 o 4 digits")
 	private String				cvv;
 
 
