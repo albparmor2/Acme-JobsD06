@@ -29,4 +29,7 @@ public interface AuditorAuditRecordRepository extends AbstractRepository {
 	@Query("select a from Auditor a where a.userAccount.id = ?1")
 	Auditor findAuditorById(int Id);
 
+	@Query("select a from AuditRecord a where a.auditor.userAccount.id= ?1")
+	Collection<AuditRecord> findManyArByAuditorId(int auditorId);
+
 }

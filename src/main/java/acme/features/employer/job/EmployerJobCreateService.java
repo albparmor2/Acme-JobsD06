@@ -87,6 +87,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
+			calendar.add(Calendar.WEEK_OF_MONTH, 1);
 			correctFutureDate = entity.getDeadline().after(calendar.getTime());
 			errors.state(request, correctFutureDate, "deadline", "acme.date.error.futureDate");
 		}

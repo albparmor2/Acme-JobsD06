@@ -39,10 +39,6 @@
        drop 
        foreign key FK_q9id3wc65gg49afc5tlr1c00n;
 
-    alter table `consumer` 
-       drop 
-       foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
-
     alter table `credit_card` 
        drop 
        foreign key `FK31l5hvh7p1nx1aw6v649gw3rc`;
@@ -79,10 +75,6 @@
        drop 
        foreign key `FKk6j425rhm4ahsi6cf2bg2um4l`;
 
-    alter table `provider` 
-       drop 
-       foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
-
     alter table `sponsor` 
        drop 
        foreign key FK_20xk0ev32hlg96kqynl6laie2;
@@ -117,8 +109,6 @@
 
     drop table if exists `company_record`;
 
-    drop table if exists `consumer`;
-
     drop table if exists `credit_card`;
 
     drop table if exists `customisation`;
@@ -138,8 +128,6 @@
     drop table if exists `offer`;
 
     drop table if exists `participation`;
-
-    drop table if exists `provider`;
 
     drop table if exists `requesta`;
 
