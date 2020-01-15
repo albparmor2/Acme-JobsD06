@@ -32,7 +32,7 @@ public class AuthenticatedInvestorRecordListService implements AbstractListServi
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector");
+		request.unbind(entity, model, "name", "sector", "stars");
 	}
 
 	@Override

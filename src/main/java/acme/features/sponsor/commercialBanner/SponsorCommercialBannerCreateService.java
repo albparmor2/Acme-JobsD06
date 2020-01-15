@@ -49,6 +49,9 @@ public class SponsorCommercialBannerCreateService implements AbstractCreateServi
 
 		request.unbind(entity, model, "picture", "slogan", "url", "creditCardNumber", "holder", "brand", "month", "year", "cvv");
 
+		CreditCard c = this.repository.findCreditCardBySponsorId(request.getPrincipal().getAccountId());
+		Boolean existcc = c != null;
+		model.setAttribute("existCreditCard", existcc);
 	}
 
 	@Override
@@ -76,6 +79,8 @@ public class SponsorCommercialBannerCreateService implements AbstractCreateServi
 		assert errors != null;
 
 		CreditCard c = this.repository.findCreditCardBySponsorId(request.getPrincipal().getAccountId());
+		Boolean existcc = c != null;
+		request.getModel().setAttribute("existCreditCard", existcc);
 		errors.state(request, c != null, "*", "sponsor.error.form.commercial-banner.creditCard");
 		if (c != null) {
 			Date d = c.expirationDate();

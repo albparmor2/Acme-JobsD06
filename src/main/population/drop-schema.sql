@@ -125,11 +125,7 @@
 
     drop table if exists `non_commercial_banner`;
 
-    drop table if exists `offer`;
-
     drop table if exists `participation`;
-
-    drop table if exists `requesta`;
 
     drop table if exists `shout`;
 

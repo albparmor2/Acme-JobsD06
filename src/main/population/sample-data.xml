@@ -337,14 +337,14 @@
 
 <bean id="announcement01" class="acme.entities.announcements.Announcement">
    <property name="title" value="Sample announcement 01"/>
-   <property name="moment" value="2019/11/01 10:35"/>
+   <property name="moment" value="2020/01/13 10:35"/>
    <property name="moreInfo"><null/></property>
    <property name="text" value="This is the description of a sample announcement"/>
 </bean>
 
 <bean id="announcement02" class="acme.entities.announcements.Announcement">
    <property name="title" value="Sample announcement 02"/>
-   <property name="moment" value="2019/06/10 00:00"/>
+   <property name="moment" value="2020/01/14 00:00"/>
    <property name="moreInfo" value="http://example.com"/>
    <property name="text" value="This is the description of another announcement"/>
 </bean>
@@ -356,34 +356,20 @@
    <property name="text" value="This is a very old announcement"/>
 </bean>
 
-<!-- Requestas -->
-
-<bean id="requesta01" class="acme.entities.requestas.Requesta">
-   <property name="title" value="Sample request 01"/>
-   <property name="moment" value="2019/09/10 10:35"/>
-   <property name="deadline" value="2020/09/10 10:35"/>
-   <property name="description" value="This is the description of a sample request"/>
-   <property name="reward" value="€300.0"/>
-   <property name="ticker" value="RALBE-12345"/>
+<bean id="announcement04" class="acme.entities.announcements.Announcement">
+   <property name="title" value="Sample announcement 04"/>
+   <property name="moment" value="2019/10/10 19:10"/>
+   <property name="moreInfo" value="http://example.com"/>
+   <property name="text" value="This is a announcement"/>
 </bean>
 
-<bean id="requesta02" class="acme.entities.requestas.Requesta">
-   <property name="title" value="Sample request 02"/>
-   <property name="moment" value="2019/05/11 12:30"/>
-   <property name="deadline" value="2020/06/08 10:30"/>
-   <property name="description" value="This is the description of a amazing request"/>
-   <property name="reward" value="€500.0"/>
-   <property name="ticker" value="REMIL-19720"/>
+<bean id="announcement05" class="acme.entities.announcements.Announcement">
+   <property name="title" value="Sample announcement 05"/>
+   <property name="moment" value="2020/01/10 19:10"/>
+   <property name="moreInfo" value="http://example.com"/>
+   <property name="text" value="This is a announcement"/>
 </bean>
 
-<bean id="requesta03" class="acme.entities.requestas.Requesta">
-   <property name="title" value="Sample request 03"/>
-   <property name="moment" value="2019/07/10 16:00"/>
-   <property name="deadline" value="2020/06/08 14:00"/>
-   <property name="description" value="Example request"/>
-   <property name="reward" value="€435.0"/>
-   <property name="ticker" value="RMARC-44444"/>
-</bean>
 
 <!-- Challenges -->
 
@@ -420,37 +406,6 @@
    <property name="goldDescription" value="the mark is 9"/>
 </bean>
 
-<!-- Offers -->
-
-<bean id="offer01" class="acme.entities.offers.Offer">
-	<property name="title" value="sample offer 01"/>
-	<property name="moment" value="2018/10/10 19:10"/>
-	<property name="deadline" value="2020/10/10 19:10"/>
-	<property name="text" value="this is a very cool offer"/>
-	<property name="minReward" value="€100.00"/>
-	<property name="maxReward" value="€300.00"/>
-	<property name="ticker" value="OMARK-44444"/>
-</bean>
-
-<bean id="offer02" class="acme.entities.offers.Offer">
-	<property name="title" value="sample offer 02"/>
-	<property name="moment" value="2018/10/10 19:10"/>
-	<property name="deadline" value="2021/10/10 19:10"/>
-	<property name="text" value="this is a other very cool offer"/>
-	<property name="minReward" value="€1000.00"/>
-	<property name="maxReward" value="€3000.00"/>
-	<property name="ticker" value="OALBR-12345"/>
-</bean>
-
-<bean id="offer03" class="acme.entities.offers.Offer">
-	<property name="title" value="sample offer 03"/>
-	<property name="moment" value="2019/10/10 19:10"/>
-	<property name="deadline" value="2021/10/10 19:10"/>
-	<property name="text" value="this is a other very cool offer"/>
-	<property name="minReward" value="€500.00"/>
-	<property name="maxReward" value="€2000.00"/>
-	<property name="ticker" value="OCARS-12334"/>
-</bean>
 
 <!-- Investor Record -->
 
@@ -466,6 +421,19 @@
     <property name="sector" value="Analyst"/>
     <property name="investingStatement" value="the amazing statement 2"/>
     <property name="stars" value="5"/>
+</bean>
+
+<bean id="investorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+    <property name="name" value="Alberto Parras"/>
+    <property name="sector" value="Manager"/>
+    <property name="investingStatement" value="the amazing statement 3"/>
+    <property name="stars" value="0"/>
+</bean>
+
+<bean id="investorRecord04" class="acme.entities.investorRecords.InvestorRecord">
+    <property name="name" value="Miguel Godino"/>
+    <property name="sector" value="cleanup"/>
+    <property name="investingStatement" value="the amazing statement 4"/>
 </bean>
 
  <!-- Company Records -->
