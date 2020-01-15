@@ -24,6 +24,9 @@ public class AuditorAuditRecordController extends AbstractController<Auditor, Au
 	private AuditorAuditRecordListService			listService;
 
 	@Autowired
+	private AuditorAuditRecordListMineService		listMineService;
+
+	@Autowired
 	private AuditorAuditRecordCreateService			createService;
 
 	@Autowired
@@ -43,6 +46,7 @@ public class AuditorAuditRecordController extends AbstractController<Auditor, Au
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
+		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listMineService);
 		super.addCustomCommand(CustomCommand.UPDATE_PUBLISH, BasicCommand.UPDATE, this.updatePublishService);
 	}
 }

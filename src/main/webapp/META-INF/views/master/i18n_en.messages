@@ -77,6 +77,7 @@ master.menu.sponsor.non-commercial-banner.create = Create non commercial banner
 # master.menu.auditor ##########################################################
 
 master.menu.auditor = Auditor
+master.menu.auditor.audit-records = My audit records
 master.menu.auditor.jobs = Jobs with my audit records
 master.menu.auditor.other-jobs = Jobs without my audit records
 
