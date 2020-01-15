@@ -39,4 +39,4 @@
 </acme:footer-panel>
 	
 	<p></p>
-	<div style="text-align:center" ><img src="${banner.url}" alt="${banner.picture}" style="border:1px solid black;width:565px;height:150 px"/></div>
+	<div style="text-align:center" ><img src="${banner.url}" alt="${banner.picture}" style="border:1px solid black;width:565px;height:150px"/></div>

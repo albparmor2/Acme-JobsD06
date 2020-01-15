@@ -142,7 +142,7 @@
 <!-- Applications -->
 <bean id="application1" class="acme.entities.applications.Application">
    <property name="reference" value="EMP1-JOB1:WORK1"/>
-   <property name="moment" value="2019/12/13 10:35"/>
+   <property name="moment" value="2020/01/13 10:35"/>
    <property name="status" value="Pending"/>
    <property name="justification" value=""/>
    <property name="statement" value="Example statement 1"/>
@@ -154,7 +154,7 @@
 
 <bean id="application2" class="acme.entities.applications.Application">
    <property name="reference" value="EMP1-JOB2:WORK1"/>
-   <property name="moment" value="2019/12/18 14:00"/>
+   <property name="moment" value="2020/01/13 14:00"/>
    <property name="status" value="Accepted"/>
    <property name="justification" value=""/>
    <property name="statement" value="Example statement 2"/>
@@ -166,7 +166,7 @@
 
 <bean id="application3" class="acme.entities.applications.Application">
    <property name="reference" value="EMP2-JOB3:WORK1"/>
-   <property name="moment" value="2019/12/18 14:00"/>
+   <property name="moment" value="2020/01/13 14:00"/>
    <property name="status" value="Accepted"/>
    <property name="justification" value=""/>
    <property name="statement" value="Example statement 3"/>
@@ -178,7 +178,7 @@
 
 <bean id="application4" class="acme.entities.applications.Application">
    <property name="reference" value="EMP2-JOB3:WORK2"/>
-   <property name="moment" value="2019/12/15 14:00"/>
+   <property name="moment" value="2020/01/05 14:00"/>
    <property name="status" value="Rejected"/>
    <property name="justification" value="Not a good application!"/>
    <property name="statement" value="Example statement 4"/>
@@ -190,7 +190,7 @@
    
 <bean id="application5" class="acme.entities.applications.Application">
    <property name="reference" value="EMP2-JOB1:WORK2"/>
-   <property name="moment" value="2019/12/10 14:00"/>
+   <property name="moment" value="2019/12/28 14:00"/>
    <property name="status" value="Rejected"/>
    <property name="statement" value="Example statement 4"/>
    <property name="skills" value="Very good work in team"/>
@@ -201,7 +201,7 @@
 
 <bean id="application6" class="acme.entities.applications.Application">
    <property name="reference" value="EMP2-JOB2:WORK2"/>
-   <property name="moment" value="2019/12/16 14:00"/>
+   <property name="moment" value="2020/01/07 14:00"/>
    <property name="status" value="Accepted"/>
    <property name="statement" value="Example statement 5"/>
    <property name="skills" value="Very good work in team"/>
@@ -212,7 +212,7 @@
 
 <bean id="application7" class="acme.entities.applications.Application">
    <property name="reference" value="EMP2-JOB4:WORK2"/>
-   <property name="moment" value="2019/12/08 10:00"/>
+   <property name="moment" value="2020/01/01 10:00"/>
    <property name="status" value="Pending"/>
    <property name="statement" value="Example statement 4"/>
    <property name="skills" value="Very good work in team"/>
@@ -223,7 +223,7 @@
 
 <bean id="application8" class="acme.entities.applications.Application">
    <property name="reference" value="EMP2-JOB4:WORK1"/>
-   <property name="moment" value="2019/12/08 14:00"/>
+   <property name="moment" value="2019/12/30 14:00"/>
    <property name="status" value="Pending"/>
    <property name="statement" value="Example statement 5"/>
    <property name="skills" value="Very good work in team"/>
@@ -375,7 +375,7 @@
 
 <bean id="challenge01" class="acme.entities.challenges.Challenge">
    <property name="title" value="Do level C"/>
-   <property name="deadline" value="2019/11/07 00:00"/>
+   <property name="deadline" value="2020/02/07 00:00"/>
    <property name="bronzeReward" value="mark 6"/>
    <property name="bronzeDescription" value="the mark is 6"/>
    <property name="silverReward" value="mark 8"/>
@@ -386,7 +386,7 @@
 
 <bean id="challenge02" class="acme.entities.challenges.Challenge">
    <property name="title" value="Do level B"/>
-   <property name="deadline" value="2019/11/07 00:00"/>
+   <property name="deadline" value="2020/04/07 00:00"/>
    <property name="bronzeReward" value="mark 6"/>
    <property name="bronzeDescription" value="the mark is 6"/>
    <property name="silverReward" value="mark 8"/>

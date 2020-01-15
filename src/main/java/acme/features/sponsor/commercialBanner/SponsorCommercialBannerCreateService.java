@@ -85,7 +85,6 @@ public class SponsorCommercialBannerCreateService implements AbstractCreateServi
 		if (c != null) {
 			Date d = c.expirationDate();
 			Calendar cal = new GregorianCalendar();
-			cal.add(Calendar.MONTH, +1);
 			errors.state(request, d.after(cal.getTime()), "year", "sponsor.error.form.commercial-banner.creditCard.date");
 		}
 
