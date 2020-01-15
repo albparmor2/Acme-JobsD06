@@ -19,4 +19,4 @@ sponsor.credit-card.form.button.create = Create
 sponsor.credit-card.form.button.update = Update 
 sponsor.credit-card.form.button.return = Return
 
-
+sponsor.error.form.creditCard.cvv = The CVV must be 3 or 4 digits

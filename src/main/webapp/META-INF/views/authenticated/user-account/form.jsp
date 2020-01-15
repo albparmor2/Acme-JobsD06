@@ -23,7 +23,10 @@
 	<acme:form-textbox code="authenticated.user-account.form.label.name" path="identity.name"/>
 	<acme:form-textbox code="authenticated.user-account.form.label.surname" path="identity.surname"/>
 	<acme:form-textbox code="authenticated.user-account.form.label.email" path="identity.email"/>
-	<acme:form-phone code="authenticated.user-account.form.label.phone" path="identity.phone"/>
+	<acme:form-phone code="authenticated.user-account.form.label.phone" path="identity.phone" placeholder="+CC (AC) N"/>
+	
+	<acme:message code="authenticated.user-account.phone.message"/>
+	<p></p>
 	 
 	<acme:form-submit code="authenticated.user-account.form.button.update" action="/authenticated/user-account/update"/>
   	<acme:form-return code="authenticated.user-account.form.button.return"/>

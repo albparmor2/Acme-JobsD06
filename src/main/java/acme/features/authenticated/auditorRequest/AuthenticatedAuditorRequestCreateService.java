@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.applications.Status;
 import acme.entities.auditorRequests.AuditorRequest;
+import acme.entities.roles.Auditor;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
@@ -42,13 +43,12 @@ public class AuthenticatedAuditorRequestCreateService implements AbstractCreateS
 	public boolean authorise(final Request<AuditorRequest> request) {
 		assert request != null;
 
-		Boolean result = true;
-		int userAccountId = request.getPrincipal().getAccountId();
-		AuditorRequest ar = this.repository.findRequestById(userAccountId);
-		if (ar != null) {
-			result = false;
-		}
-		return result;
+		int authenticatedId;
+		Auditor auditor;
+
+		authenticatedId = request.getPrincipal().getAccountId();
+		auditor = this.repository.findAuditorByAuthenticatedId(authenticatedId);
+		return auditor == null;
 	}
 
 	@Override
@@ -65,6 +65,11 @@ public class AuthenticatedAuditorRequestCreateService implements AbstractCreateS
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+
+		int authenticatedId = request.getPrincipal().getAccountId();
+		AuditorRequest a = this.repository.findRequestById(authenticatedId);
+		Boolean existAuditorRequest = a != null;
+		model.setAttribute("existAuditorRequest", existAuditorRequest);
 
 		request.unbind(entity, model, "firm", "responsibilityStatement");
 	}
@@ -94,6 +99,7 @@ public class AuthenticatedAuditorRequestCreateService implements AbstractCreateS
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
 	}
 
 	@Override

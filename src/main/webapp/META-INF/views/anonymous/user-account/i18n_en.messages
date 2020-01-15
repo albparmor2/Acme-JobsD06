@@ -16,7 +16,7 @@ anonymous.user-account.label.confirmation = Confirmation:
 anonymous.user-account.label.name = Name:
 anonymous.user-account.label.surname = Surname:
 anonymous.user-account.label.email = Email:
-anonymous.user-account.label.phone = Phone:
+anonymous.user-account.label.phone = Phone*:
 anonymous.user-account.label.accept = I do accept the license
 
 anonymous.user-account.button.create = Sign up
@@ -25,3 +25,5 @@ anonymous.user-account.button.return = Return
 anonymous.user-account.error.duplicated = This name is already taken
 anonymous.user-account.error.must-accept = Must accept the license
 anonymous.user-account.error.confirmation-no-match = Confirmation doesn't match
+
+anonymous.user-account.phone.message = (*) “+CC” is the country code; “(AC)” is the area code (optional); and “N” is the phone number

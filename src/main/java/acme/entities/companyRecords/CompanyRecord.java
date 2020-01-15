@@ -38,7 +38,7 @@ public class CompanyRecord extends DomainEntity {
 	private String				website;
 
 	@NotBlank
-	@Pattern(regexp = "^([+]\\d{1,3}\\s)?([(]\\d{1,4}[)]\\s)?\\d{6,10}$", message = "acme.telephoneNumber.error.pattern")
+	@Pattern(regexp = "^([+]\\d{1,3}\\s)?([(]\\d{1,4}[)]\\s)?\\d{6,10}$", message = "The phone must follow the pattern +[3-4 digits] [(1-4 digits)] [6-10 digits]")
 	private String				contactPhone;
 
 	@NotBlank

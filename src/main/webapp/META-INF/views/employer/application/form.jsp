@@ -38,9 +38,7 @@
 	</jstl:if>
 	<jstl:if test="${status == 'Pending'}">
 	<acme:form-submit code="employer.job.form.button.update.accepted" action="/employer/application/update-accepted"/>
-	<p></p>
-	<a href=/acme-jobs/employer/application/update-rejected?id=${id}><acme:message code="employer.application.form.label.reject"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="employer.application.form.label.reject" action="/employer/application/update-rejected?id=${id}"/>
 	</jstl:if>
 	<jstl:if test="${command == 'update-rejected'}">
 	<acme:form-submit code="employer.job.form.button.confirm" action="/employer/application/update-rejected"/>

@@ -21,15 +21,12 @@
 	<acme:form-moment code="authenticated.thread.form.label.moment" path="moment" readonly="true"/>
 	<acme:form-textbox code="authenticated.thread.form.label.creator.username" path="creator.userAccount.username" readonly="true"/>
 	<jstl:if test="${isCreator == true}">
-	<a href="/acme-jobs/authenticated/participation/list?threadId=${id}"><acme:message code="authenticated.thread.form.label.participations"/></a>
-	<p></p>
-	<a href="/acme-jobs/authenticated/participation/create?threadId=${id}"><acme:message code="authenticated.thread.form.label.create.participation"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="authenticated.thread.form.label.participations" action="/authenticated/participation/list?threadId=${id}"/>
+	<acme:form-submit method="get" code="authenticated.thread.form.label.create.participation" action="/authenticated/participation/create?threadId=${id}"/>
 	</jstl:if>
-	<a href="/acme-jobs/authenticated/message/list?threadId=${id}"><acme:message code="authenticated.thread.form.label.messages"/></a>
-	<p></p>
-	<a href="/acme-jobs/authenticated/message/create?threadId=${id}"><acme:message code="authenticated.thread.form.label.create.message"/></a>
-	<p></p>
+	
+	<acme:form-submit method="get" code="authenticated.thread.form.label.messages" action="/authenticated/message/list?threadId=${id}"/>
+	<acme:form-submit method="get" code="authenticated.thread.form.label.create.message" action="/authenticated/message/create?threadId=${id}"/>
 	</jstl:if>
 	<acme:form-submit test="${command == 'create'}" code="authenticated.thread.form.button.create"
 	action="/authenticated/thread/create"/>
