@@ -23,12 +23,9 @@
 	<acme:form-url code="auditor.job.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-textarea code="auditor.job.form.label.description" path="description"/>
 	
-	<a href=/acme-jobs/auditor/duty/list?id=${id}><acme:message code="auditor.job.form.label.duty"/><a/>
-	<p></p>
-	<a href=/acme-jobs/auditor/audit-record/list?id=${id}><acme:message code="auditor.job.form.label.auditRecord"/></a>
-	<p></p>
-	<a href=/acme-jobs/auditor/audit-record/create?jobId=${id}><acme:message code="auditor.audit-record.form.label.create"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="auditor.job.form.label.duty" action="/auditor/duty/list?id=${id}"/>
+	<acme:form-submit method="get" code="auditor.job.form.label.auditRecord" action="/auditor/audit-record/list?id=${id}"/>
+	<acme:form-submit method="get" code="auditor.audit-record.form.label.create" action="/auditor/audit-record/create?jobId=${id}"/>
 	
 	<acme:form-return code="auditor.job.form.button.return"/>
 	

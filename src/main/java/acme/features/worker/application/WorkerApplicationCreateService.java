@@ -60,6 +60,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 	@Override
 	public Application instantiate(final Request<Application> request) {
 		Application result;
+
 		result = new Application();
 		Date moment;
 		moment = new Date(System.currentTimeMillis() - 1);
@@ -72,7 +73,12 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		int jobId = request.getModel().getInteger("jobId");
 		Job job = this.repository.findOneJobById(jobId);
 		result.setJob(job);
+
 		result.setStatus(Status.Pending);
+
+		result.setSkills(worker.getSkillsRecord());
+		result.setQualifications(worker.getQualificationsRecord());
+
 		return result;
 	}
 
