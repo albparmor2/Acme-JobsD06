@@ -15,6 +15,7 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
+<jstl:if test="${existCreditCard}">
 <acme:form>
 	<acme:form-textbox code="sponsor.commercial-banner.form.label.picture" path="picture"/>
 	<acme:form-textbox code="sponsor.commercial-banner.form.label.slogan" path="slogan"/>
@@ -41,5 +42,10 @@
 	
 	
 	<acme:form-return code="sponsor.commercial-banner.form.button.return"/>
-	
 </acme:form>
+
+</jstl:if>
+
+<jstl:if test="${!existCreditCard}">
+<acme:message code="sponsor.commercial-banner.form.creditCard"/>
+</jstl:if>
