@@ -28,15 +28,12 @@
 	
 	<jstl:if test="${command != 'create'}">
 	<jstl:if test="${status == 'Published'}">
-	<a href=/acme-jobs/employer/audit-record/list?id=${id}><acme:message code="employer.job.form.label.auditRecord"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="employer.job.form.label.auditRecord" action="/employer/audit-record/list?id=${id}"/>
 	</jstl:if>
-	<a href=/acme-jobs/employer/duty/list?id=${id}><acme:message code="employer.job.form.label.duty"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="employer.job.form.label.duty" action="/employer/duty/list?id=${id}"/>
 	
 	<jstl:if test="${status == 'Draft'}">
-	<a href=/acme-jobs/employer/duty/create?jobId=${id}><acme:message code="employer.job.form.label.duty.create"/></a>
-	<p></p>
+	<acme:form-submit method="get" code="employer.job.form.label.duty.create" action="/employer/duty/create?jobId=${id}"/>
 	</jstl:if>
 	<p></p>
 	

@@ -16,6 +16,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.auditorRequests.AuditorRequest;
+import acme.entities.roles.Auditor;
 import acme.framework.entities.Authenticated;
 import acme.framework.repositories.AbstractRepository;
 
@@ -27,4 +28,7 @@ public interface AuthenticatedAuditorRequestRepository extends AbstractRepositor
 
 	@Query("select ar from AuditorRequest ar where ar.authenticated.userAccount.id = ?1 and ar.status != 'Rejected'")
 	AuditorRequest findRequestById(int id);
+
+	@Query("select a from Auditor a where a.userAccount.id = ?1")
+	Auditor findAuditorByAuthenticatedId(int id);
 }

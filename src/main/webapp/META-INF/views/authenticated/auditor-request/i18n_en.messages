@@ -13,5 +13,7 @@ authenticated.auditor-request.auditor-request.form.title.create = Request to bec
 authenticated.auditor-request.form.label.firm = Firm: 
 authenticated.auditor-request.form.label.responsibilityStatement = Responsability statement:
 
+authenticated.auditor-request.existAuditorRequest = You already have a pending application to be an auditor, please wait for its acceptance.
+
 authenticated.auditor-request.form.button.create = Register
 authenticated.auditor-request.form.button.return = Return
